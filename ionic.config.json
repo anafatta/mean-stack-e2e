@@ -1,0 +1,8 @@
+{
+  "name": "mean-stack-e2e",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
