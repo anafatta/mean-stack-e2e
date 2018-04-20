@@ -4,15 +4,38 @@
   </ion-navbar>
 </ion-header>
 
+
 <ion-content>
+  <h2> Hello {{userName}}</h2>
   <ion-content>
     <ion-grid *ngFor="let post of posts">
-    <ion-row>
-      <h2>{{post.title}}</h2>
-    </ion-row>
-    <ion-row>
-      <p>{{post.body}}</p>
-    </ion-row>
-  </ion-grid>
+      <ion-row>
+        <h2 class="title">{{post.title}}</h2>
+      </ion-row>
+      <ion-row>
+        <p class="body">{{post.body}}</p>
+      </ion-row>
+    </ion-grid>
   </ion-content>
+
+    <ion-content>
+    <ion-grid *ngFor="let comment of comments">
+      <ion-row>
+        <h2 class="title">{{comment.id}}</h2>
+      </ion-row>
+      <ion-row>
+        <p class="body">{{comment.postId}}</p>
+      </ion-row>
+      <ion-row>
+        <p class="body">{{comment.name}}</p>
+      </ion-row>
+      <ion-row>
+        <p class="body">{{comment.email}}</p>
+      </ion-row>
+      <ion-row>
+        <p class="body">{{comment.body}}</p>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
 </ion-content>
